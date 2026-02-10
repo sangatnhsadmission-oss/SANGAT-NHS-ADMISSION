@@ -93,7 +93,7 @@ window.onclick = function(event) {
 
 // ===== IMPORTANT: CONFIGURE YOUR GOOGLE APPS SCRIPT URL HERE =====
 // Replace this with your actual Google Apps Script Web App URL
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzWx_qovE0rOkSz4G1Lstugm3Nec6WURZrZcJwiAE32unVBl42_A_tIKjeBksNDkbnp/exec';
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyantLTBo8T3yUnPE2d2vbfQiL3TpaWy6K-o8SV67PytPOrMKgqiakgrw3zdG4RKs22/exec';
 // Example: 'https://script.google.com/macros/s/AKfycby.../exec'
 // ==================================================================
 
@@ -102,7 +102,7 @@ async function handleSubmit(event) {
     event.preventDefault();
     
     // Check if backend is configured
-    if (SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbzWx_qovE0rOkSz4G1Lstugm3Nec6WURZrZcJwiAE32unVBl42_A_tIKjeBksNDkbnp/exec') {
+    if (SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbyantLTBo8T3yUnPE2d2vbfQiL3TpaWy6K-o8SV67PytPOrMKgqiakgrw3zdG4RKs22/exec') {
         alert('⚠️ Backend Not Configured!\n\nPlease set up Google Apps Script first.\n\nFollow the instructions in SETUP-GUIDE.md to configure the backend.');
         return;
     }
@@ -233,7 +233,7 @@ async function handleContactSubmit(event) {
     submitBtn.disabled = true;
     
     // Check if backend is configured
-    if (SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbzWx_qovE0rOkSz4G1Lstugm3Nec6WURZrZcJwiAE32unVBl42_A_tIKjeBksNDkbnp/exec') {
+    if (SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbyantLTBo8T3yUnPE2d2vbfQiL3TpaWy6K-o8SV67PytPOrMKgqiakgrw3zdG4RKs22/exec') {
         alert('⚠️ Backend Not Configured!\n\nContact form requires Google Apps Script setup.\n\nFor now, please email us directly at:\nregistrar@sangatnhs.edu.ph');
         submitBtn.innerHTML = originalText;
         submitBtn.disabled = false;
@@ -415,3 +415,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 });
+
