@@ -1,6 +1,6 @@
 // ===== IMPORTANT: CONFIGURE YOUR GOOGLE APPS SCRIPT URL HERE =====
 // Replace this with your actual Google Apps Script Web App URL
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzWx_qovE0rOkSz4G1Lstugm3Nec6WURZrZcJwiAE32unVBl42_A_tIKjeBksNDkbnp/exec';
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyantLTBo8T3yUnPE2d2vbfQiL3TpaWy6K-o8SV67PytPOrMKgqiakgrw3zdG4RKs22/exec';
 // Example: 'https://script.google.com/macros/s/AKfycby.../exec'
 // ==================================================================
 
@@ -539,4 +539,5 @@ function capitalizeFirst(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 
 }
+
 
