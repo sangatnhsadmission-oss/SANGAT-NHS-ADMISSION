@@ -42,7 +42,7 @@ async function loadEnrollments() {
     
     // Debug: Log the current SCRIPT_URL
     console.log('Current SCRIPT_URL:', SCRIPT_URL);
-    console.log('Is configured:', SCRIPT_URL !== 'https://script.google.com/macros/s/AKfycbzWx_qovE0rOkSz4G1Lstugm3Nec6WURZrZcJwiAE32unVBl42_A_tIKjeBksNDkbnp/exec');
+    console.log('Is configured:', SCRIPT_URL !== 'https://script.google.com/macros/s/AKfycbyantLTBo8T3yUnPE2d2vbfQiL3TpaWy6K-o8SV67PytPOrMKgqiakgrw3zdG4RKs22/exec');
     
     // Check if backend is configured
     if (SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbyantLTBo8T3yUnPE2d2vbfQiL3TpaWy6K-o8SV67PytPOrMKgqiakgrw3zdG4RKs22/exec' || !SCRIPT_URL || SCRIPT_URL.trim() === 'https://script.google.com/macros/s/AKfycbyantLTBo8T3yUnPE2d2vbfQiL3TpaWy6K-o8SV67PytPOrMKgqiakgrw3zdG4RKs22/exec') {
@@ -539,6 +539,7 @@ function capitalizeFirst(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 
 }
+
 
 
 
