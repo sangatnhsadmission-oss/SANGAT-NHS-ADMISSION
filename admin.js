@@ -1,6 +1,6 @@
 // ===== IMPORTANT: CONFIGURE YOUR GOOGLE APPS SCRIPT URL HERE =====
 // Replace this with your actual Google Apps Script Web App URL
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyantLTBo8T3yUnPE2d2vbfQiL3TpaWy6K-o8SV67PytPOrMKgqiakgrw3zdG4RKs22/exec';
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxPv7pBwKcFwM8hFRvMT9-IHHPhqXi3HsZ9FJSo1eWNIR0wVwDw_Wbz8BFP2leXw78aIQ/exec';
 // Example: 'https://script.google.com/macros/s/AKfycby.../exec'
 // ==================================================================
 
@@ -42,10 +42,10 @@ async function loadEnrollments() {
     
     // Debug: Log the current SCRIPT_URL
     console.log('Current SCRIPT_URL:', SCRIPT_URL);
-    console.log('Is configured:', SCRIPT_URL !== 'https://script.google.com/macros/s/AKfycbyantLTBo8T3yUnPE2d2vbfQiL3TpaWy6K-o8SV67PytPOrMKgqiakgrw3zdG4RKs22/exec');
+    console.log('Is configured:', SCRIPT_URL !== 'https://script.google.com/macros/s/AKfycbxPv7pBwKcFwM8hFRvMT9-IHHPhqXi3HsZ9FJSo1eWNIR0wVwDw_Wbz8BFP2leXw78aIQ/exec');
     
     // Check if backend is configured
-    if (SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbyantLTBo8T3yUnPE2d2vbfQiL3TpaWy6K-o8SV67PytPOrMKgqiakgrw3zdG4RKs22/exec' || !SCRIPT_URL || SCRIPT_URL.trim() === 'https://script.google.com/macros/s/AKfycbyantLTBo8T3yUnPE2d2vbfQiL3TpaWy6K-o8SV67PytPOrMKgqiakgrw3zdG4RKs22/exec') {
+    if (SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbxPv7pBwKcFwM8hFRvMT9-IHHPhqXi3HsZ9FJSo1eWNIR0wVwDw_Wbz8BFP2leXw78aIQ/exec' || !SCRIPT_URL || SCRIPT_URL.trim() === 'https://script.google.com/macros/s/AKfycbxPv7pBwKcFwM8hFRvMT9-IHHPhqXi3HsZ9FJSo1eWNIR0wVwDw_Wbz8BFP2leXw78aIQ/exec') {
         container.innerHTML = `
             <div class="empty-state show">
                 <div class="empty-icon">⚠️</div>
@@ -539,6 +539,7 @@ function capitalizeFirst(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 
 }
+
 
 
 
