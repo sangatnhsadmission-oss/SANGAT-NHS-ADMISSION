@@ -1,8 +1,8 @@
 /* CSS Variables */
 :root {
-    --primary: #1a4d2e;
-    --primary-light: #2d7a4f;
-    --accent: #f77f00;
+    --primary: #081dd6;
+    --primary-light: #4117da;
+    --accent: #5fabde;
     --accent-light: #fcbf49;
     --dark: #0f1a14;
     --light: #f8f9fa;
@@ -108,15 +108,16 @@ header::before {
 }
 
 .logo {
-    width: 90px;
-    height: 90px;
+    width: 330px;
+    height: 330px;
     background: white;
+    object-fit: cover;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 20rem;
+    font-weight: 1000;
     color: var(--primary);
     box-shadow: 0 8px 24px rgba(0,0,0,0.15);
     border: 4px solid var(--accent);
@@ -135,15 +136,15 @@ header::before {
 
 .school-info h1 {
     font-family: 'Crimson Pro', serif;
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 64px;
+    font-weight: 800;
     margin-bottom: 0.3rem;
     letter-spacing: -0.5px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
 .school-info p {
-    font-size: 1rem;
+    font-size: 28px;
     opacity: 0.95;
     font-weight: 300;
 }
@@ -546,8 +547,8 @@ footer {
     }
     
     .logo {
-        width: 70px;
-        height: 70px;
+        width: 80px;
+        height: 80px;
         font-size: 2rem;
     }
 
@@ -913,4 +914,5 @@ footer {
     .admin-login-header h2 {
         font-size: 1.5rem;
     }
+
 }
