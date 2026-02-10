@@ -45,7 +45,7 @@ async function loadEnrollments() {
     console.log('Is configured:', SCRIPT_URL !== 'https://script.google.com/macros/s/AKfycbzWx_qovE0rOkSz4G1Lstugm3Nec6WURZrZcJwiAE32unVBl42_A_tIKjeBksNDkbnp/exec');
     
     // Check if backend is configured
-    if (SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbzWx_qovE0rOkSz4G1Lstugm3Nec6WURZrZcJwiAE32unVBl42_A_tIKjeBksNDkbnp/exec' || !SCRIPT_URL || SCRIPT_URL.trim() === 'https://script.google.com/macros/s/AKfycbzWx_qovE0rOkSz4G1Lstugm3Nec6WURZrZcJwiAE32unVBl42_A_tIKjeBksNDkbnp/exec') {
+    if (SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbyantLTBo8T3yUnPE2d2vbfQiL3TpaWy6K-o8SV67PytPOrMKgqiakgrw3zdG4RKs22/exec' || !SCRIPT_URL || SCRIPT_URL.trim() === 'https://script.google.com/macros/s/AKfycbyantLTBo8T3yUnPE2d2vbfQiL3TpaWy6K-o8SV67PytPOrMKgqiakgrw3zdG4RKs22/exec') {
         container.innerHTML = `
             <div class="empty-state show">
                 <div class="empty-icon">⚠️</div>
@@ -539,5 +539,6 @@ function capitalizeFirst(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 
 }
+
 
 
