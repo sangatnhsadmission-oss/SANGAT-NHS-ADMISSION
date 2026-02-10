@@ -1,6 +1,6 @@
 // ===== IMPORTANT: CONFIGURE YOUR GOOGLE APPS SCRIPT URL HERE =====
 // Replace this with your actual Google Apps Script Web App URL
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxPv7pBwKcFwM8hFRvMT9-IHHPhqXi3HsZ9FJSo1eWNIR0wVwDw_Wbz8BFP2leXw78aIQ/exec';
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx_TDVUm-ffwol0qsizEz9zVMwYfd1VwQZXtdQYu9MSgIz5poaGK-fWVFDLiDaaOlJJUw/exec';
 // Example: 'https://script.google.com/macros/s/AKfycby.../exec'
 // ==================================================================
 
@@ -40,36 +40,7 @@ async function loadEnrollments() {
     const container = document.getElementById('enrollmentsContainer');
     const emptyState = document.getElementById('emptyState');
     
-    // Debug: Log the current SCRIPT_URL
-    console.log('Current SCRIPT_URL:', SCRIPT_URL);
-    console.log('Is configured:', SCRIPT_URL !== 'https://script.google.com/macros/s/AKfycbxPv7pBwKcFwM8hFRvMT9-IHHPhqXi3HsZ9FJSo1eWNIR0wVwDw_Wbz8BFP2leXw78aIQ/exec');
-    
-    // Check if backend is configured
-    if (SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbxPv7pBwKcFwM8hFRvMT9-IHHPhqXi3HsZ9FJSo1eWNIR0wVwDw_Wbz8BFP2leXw78aIQ/exec' || !SCRIPT_URL || SCRIPT_URL.trim() === 'https://script.google.com/macros/s/AKfycbxPv7pBwKcFwM8hFRvMT9-IHHPhqXi3HsZ9FJSo1eWNIR0wVwDw_Wbz8BFP2leXw78aIQ/exec') {
-        container.innerHTML = `
-            <div class="empty-state show">
-                <div class="empty-icon">⚠️</div>
-                <h2>Backend Not Configured</h2>
-                <p><strong>Please set up Google Apps Script backend first!</strong></p>
-                <p style="color: red; font-size: 0.9rem; margin: 15px 0; padding: 10px; background: #fff3cd; border-radius: 5px;">
-                    <strong>Current URL:</strong> ${SCRIPT_URL}<br>
-                    <strong>Status:</strong> Not configured or invalid
-                </p>
-                <p>Follow these steps:</p>
-                <ol style="text-align: left; max-width: 600px; margin: 20px auto;">
-                    <li>Create a Google Sheet for storing enrollments</li>
-                    <li>Create a Google Apps Script and paste the backend code</li>
-                    <li>Deploy the script as a Web App</li>
-                    <li>Copy the Web App URL</li>
-                    <li>Update <code>admin-script.js</code> line 3 with your URL</li>
-                    <li>Also update <code>script.js</code> with the same URL</li>
-                    <li>Re-upload files to your website</li>
-                </ol>
-                <p>Check the <strong>SETUP-GUIDE.md</strong> file for detailed instructions.</p>
-            </div>
-        `;
-        return;
-    }
+
     
     // Show loading state
     container.innerHTML = `
@@ -537,10 +508,4 @@ function formatDate(dateString) {
 // Helper function to capitalize first letter
 function capitalizeFirst(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
-
 }
-
-
-
-
-
