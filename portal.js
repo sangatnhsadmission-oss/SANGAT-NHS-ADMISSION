@@ -197,7 +197,7 @@ async function handleSubmit(event) {
             ? `\n\n📧 A confirmation email with your INTERVIEW SCHEDULE has been sent to:\n${formData.email}` 
             : '';
         
-        alert(`✅ ENROLLMENT SUCCESSFUL!\n\nCongratulations, ${fullName}!\n\nYour enrollment for Grade ${formData.gradeLevel}${formData.track !== 'N/A' ? ' - ' + formData.track : ''} has been accepted.\n\nGeneral Average: ${formData.average}%\nLRN: ${formData.lrn}${emailMsg}\n\nIMPORTANT: You cannot enroll again for SY 2026-2027.\n\nPlease check your email for interview details.\n\nSee you soon at Sangat National High School!`);
+        alert(`✅ ENROLLMENT SUCCESSFUL!\n\nCongratulations, ${fullName}!\n\nYour enrollment for Grade ${formData.gradeLevel}${formData.track !== 'N/A' ? ' - ' + formData.track : ''} has been accepted.\n\nGeneral Average: ${formData.generalaverage}%\nLRN: ${formData.lrn}${emailMsg}\n\nIMPORTANT: You cannot enroll again for SY 2026-2027.\n\nPlease check your email for interview details.\n\nSee you soon at Sangat National High School!`);
         
         // Reset form
         form.reset();
@@ -404,3 +404,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
